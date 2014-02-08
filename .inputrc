@@ -1,0 +1,10 @@
+set editing-mode vi
+set keymap vi
+#"\ec": "#[]\C-b"
+
+# [http://www.debian.org/doc/manuals/debian-reference/ch-tips.en.html#s8.6.7]
+#set bell-style none
+
+# [http://caliban.org/bash/index.shtml#completion]
+# tab once instead of twice to get completeions
+set show-all-if-ambiguous on

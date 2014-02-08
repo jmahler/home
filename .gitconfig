@@ -1,0 +1,7 @@
+[user]
+	email = jmmahler@gmail.com
+	name = Jeremiah Mahler
+[core]
+	autocrlf = input
+[push]
+	default = simple
