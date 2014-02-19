@@ -5,10 +5,8 @@
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
-# don't put duplicate lines in the history. See bash(1) for more options
-# don't overwrite GNU Midnight Commander's setting of `ignorespace'.
-HISTCONTROL=$HISTCONTROL${HISTCONTROL+:}ignoredups
-# ... or force ignoredups and ignorespace
+# don't put duplicate lines or lines starting with space in the history.
+# See bash(1) for more options
 HISTCONTROL=ignoreboth
 
 # append to the history file, don't overwrite it
@@ -69,22 +67,13 @@ esac
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
-    #alias dir='dir --color=auto'
-    #alias vdir='vdir --color=auto'
-
-    #alias grep='grep --color=auto'
-    #alias fgrep='fgrep --color=auto'
-    #alias egrep='egrep --color=auto'
 fi
 
 # some more ls aliases
 alias ll='ls -l'
-alias la='ls -A'
-#alias l='ls -CF'
 
 alias df='df -h'
 
-#alias cmucl="rlwrap cmucl"
 alias sbcl="rlwrap sbcl"
 
 # Alias definitions.
@@ -123,8 +112,3 @@ complete -F _quilt_completion $_quilt_complete_opt dquilt
 
 export PERL5LIB=$HOME/lib/perl5
 export PATH=$PATH:~/bin
-
-# Elements of Computing Systems tools
-#export PATH=$PATH:$HOME/tecs/tools
-
-alias 'wpa_cli'='/sbin/wpa_cli'
