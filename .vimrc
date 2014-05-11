@@ -22,8 +22,6 @@ endif
 ":nmap <F8> :w<CR>:!aspell -c %<CR>:e<CR>
 ":autocmd FileType mail :nmap <F8> :w<CR>:!aspell -e -c %<CR>:e<CR>
 
-nmap <F3> :r !echo -n "Signed-off-by: $EMAIL"<CR>
-
 :highlight Folded term=standout ctermfg=darkblue ctermbg=black
 
 " automatic comment inserting
