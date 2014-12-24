@@ -3,7 +3,7 @@
 set modeline
 
 syntax on
-"set hlsearch
+set hlsearch
 set incsearch
 set ignorecase
 
