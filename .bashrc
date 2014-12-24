@@ -116,10 +116,6 @@ set -o vi
 export EDITOR="vim"
 export VISUAL="vim"
 
-# be quiet
-setterm -blength 0
-xset -b
-
 export NAME="Jeremiah Mahler"
 export DEBFULLNAME=$NAME
 export DEBMAIL="jmmahler@gmail.com"
