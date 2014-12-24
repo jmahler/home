@@ -5,3 +5,8 @@
 	autocrlf = input
 [push]
 	default = simple
+[sendemail]
+	aliasfiletype = mutt
+	aliasesfile = /home/jeri/.muttrc
+	smtpserver = /usr/bin/msmtp
+[test]
