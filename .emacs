@@ -14,17 +14,14 @@
 
 (setq org-todo-keywords
   (quote
-   ((sequence "TODO(t!)" "OPEN(o)" "|" "WAITING(w)" "DONE(d!)" "CANCELLED(c@/!)" "SOMEDAY(S!)"))))
+   ((sequence "TODO(t!)" "|" "WAITING(w!)" "DONE(d!)" "CANCELLED(c@/!)" "SOMEDAY(S!)"))))
 
 (setq org-todo-keyword-faces (quote (
  ("TODO" :foreground "red" :weight bold)
  ("DONE" :foreground "forest green" :weight bold)
  ("WAITING" :foreground "orange" :weight bold)
  ("SOMEDAY" :foreground "magenta" :weight bold)
- ("CANCELLED" :foreground "forest green" :weight bold)
- ("OPEN" :foreground "orange" :weight bold)
- ("GOAL" :foreground "yellow" :weight bold)
- ("PROJECT" :foreground "yellow" :weight bold))))
+ ("CANCELLED" :foreground "forest green" :weight bold))))
 
 (global-font-lock-mode 1)                     ; for all buffers
 (add-hook 'org-mode-hook 'turn-on-font-lock)  ; Org buffers only
