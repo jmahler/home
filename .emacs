@@ -56,12 +56,6 @@
  ;; If there is more than one, they won't work right.
  '(default ((t (:inherit nil :stipple nil :background "black" :foreground "white" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 90 :width normal :foundry "xos4" :family "Terminus")))))
 
-;; org-mode, time clock
-;; http://doc.norang.ca/org-mode.html#sec-7.1
-(setq org-clock-persistence-insinuate)
-(setq org-clock-in-resume t)
-(setq org-clock-persist t)
-
 ;; Transient Mark Mode
 (setq transient-mark-mode t)
 
