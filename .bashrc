@@ -86,10 +86,8 @@ fi
 
 # some more ls aliases
 alias ll='ls -l'
-
 alias df='df -h'
-
-alias sbcl="rlwrap sbcl"
+#alias sbcl="rlwrap sbcl"
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
@@ -116,3 +114,6 @@ complete -F _quilt_completion $_quilt_complete_opt dquilt
 
 export PERL5LIB=$HOME/lib/perl5
 export PATH=$PATH:~/bin
+
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin

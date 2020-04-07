@@ -33,7 +33,6 @@ set tw=72
 "au FileType text set tw=72
 "au FileType diff set tw=72
 
-
 set tabstop=4
 set shiftwidth=4
 
@@ -41,6 +40,9 @@ au FileType c set ts=8 sw=8
 au FileType cpp set ts=8 sw=8
 
 au FileType mail set expandtab
+
+au Syntax yaml set expandtab
+au Syntax javascript set ts=2 sw=2 et
 
 set foldmethod=marker
 " vim:syntax=vim
